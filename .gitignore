@@ -1,0 +1,50 @@
+# -------------------------
+# Secrets / configuration
+# -------------------------
+.env
+.env.*
+*.env
+
+# -------------------------
+# Garmin authentication
+# -------------------------
+tokens/
+token/
+.garth/
+garth/
+session/
+sessions/
+
+# -------------------------
+# Local / private data
+# -------------------------
+data/
+pipeline-state/
+*.parquet
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# -------------------------
+# IDE / OS files
+# -------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Temporary files / logs
+# -------------------------
+*.log
+*.tmp
+*.temp

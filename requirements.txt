@@ -1,0 +1,7 @@
+numpy
+pandas
+pyarrow
+garmin-fit-sdk
+garminconnect
+azure-storage-blob
+azure-identity
