@@ -56,7 +56,8 @@ The pipeline is incremental. Previously processed data is persisted so scheduled
 
 ## Automation
 
-The pipeline runs automatically through a scheduled **GitHub Actions** workflow.
+The pipeline runs automatically through a scheduled **GitHub Actions** workflow. An example of the GitHub Actions workflow is included in example/update-dashboard.yml. 
+It is stored outside .github/workflows/ so the portfolio repository does not execute the duplicate production workflow.
 
 The workflow:
 
@@ -113,9 +114,8 @@ Running-Dashboard/
 ├── README.md
 ├── requirements.txt
 ├── running_insights_pipeline.py
-├── .github/
-│   └── workflows/
-│       └── update-dashboard.yml
+├── example/
+│       └── update-dashboard.yml 
 └── images/
     ├── running-dashboard-thumbnail.png
     └── running-dashboard-architecture.png
@@ -147,7 +147,7 @@ No Garmin passwords, Azure storage keys or other credentials are stored in this 
 
 Private data, authentication state and intermediate pipeline datasets are stored separately from publicly accessible dashboard outputs.
 
-GitHub Actions uses passwordless Azure authentication through OIDC for automated cloud access.
+The production GitHub Actions workflow uses passwordless Azure authentication through OIDC.
 
 ## Disclaimer
 
